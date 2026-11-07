@@ -10,9 +10,9 @@ Kiểm tra xem [UTMOSv2](https://github.com/sarulab-speech/UTMOSv2) (model dự 
 | --- | --- |
 | `bao_cao_utmosv2_tieng_viet.pdf` | Báo cáo đầy đủ: thiết lập, kết quả, nhận xét, hạn chế |
 | `UTMOSv2_TiengViet_Demo.ipynb` | Notebook Colab tái lập toàn bộ (GPU T4, Run all) |
-| `sound/` | 20 clip tiếng Việt (`clip_01.mp3` … `clip_20.mp3`) đúng như người nghe đã nghe |
+| `clips/` | 20 clip tiếng Việt (`clip_01.mp3` … `clip_20.mp3`) đúng như người nghe đã nghe |
 | `ket_qua_cham_diem.csv` | **File chính:** mỗi clip một dòng, điểm 4 người nghe + điểm UTMOSv2 |
-| `ratings_*.csv` | Điểm gốc của từng người nghe, xuất từ web khảo sát |
+| `human_ratings/` | 4 file điểm gốc của từng người nghe, xuất từ web khảo sát; có thêm ghi chú, thứ tự nghe, số lần nghe |
 | `utmosv2_scores_480_file.csv` | Điểm UTMOSv2 cho toàn bộ 480 file của thí nghiệm gián tiếp (Việt vs Anh) |
 | `figures/` | Biểu đồ dùng trong báo cáo |
 
@@ -28,7 +28,7 @@ Kiểm tra xem [UTMOSv2](https://github.com/sarulab-speech/UTMOSv2) (model dự 
 
 | Cột | Ý nghĩa |
 | --- | --- |
-| `clip_id` | Tên file trong `sound/` |
+| `clip_id` | Tên file trong `clips/` |
 | `he` | Điều kiện: `natural`, `mms`, `gtts`, `noise20`, `noise10`, `noise5`, `noise0` |
 | `fleurs_id` | Mã câu trong FLEURS |
 | `cau_goc` | Văn bản câu (người nghe không được xem) |
